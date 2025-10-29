@@ -12,7 +12,7 @@ const NameInputModal = dynamic(() => import("@/components/NameInputModal"), {
 });
 
 export const metadata: Metadata = {
-  title: "AI PPT Generator",
+  title: "Chat2Slides",
   description: "Create presentations with AI",
 };
 

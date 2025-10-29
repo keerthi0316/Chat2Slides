@@ -336,8 +336,7 @@ export default function Home() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Start with a topic — e.g. 'Explain AI in 5 slides'"
-              className="flex-1 rounded-full border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2"
-              style={{ focusRingColor: ACCENT_HEX }}
+              className="flex-1 rounded-full border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2563EB]"
               disabled={isLoading}
             />
             <button

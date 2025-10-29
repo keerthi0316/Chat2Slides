@@ -113,7 +113,7 @@ export async function POST(req: NextRequest) {
         const buffer = await pptx.write({ outputType: "nodebuffer" });
 
         // Send the PPTX file buffer back to the client
-        return new NextResponse(buffer, {
+        return new NextResponse(buffer as any, {
             status: 200,
             headers: {
                 "Content-Type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
