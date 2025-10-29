@@ -74,8 +74,15 @@ export async function POST(req: NextRequest) {
             // 2. Add Content (Moved to the left to make room for the image)
             const contentString = slide.content.join("\n");
             pptxSlide.addText(contentString, {
-                x: 0.5, y: 1.5, w: "50%", h: 4, fontSize: 18, color: "363636", bullet: { type: 'disc' },
-            });
+                x: 0.5,
+                y: 1.5,
+                w: "50%",
+                h: 4,
+                fontSize: 18,
+                color: "363636",
+                bullet: { type: "bullet" }, // ✅ changed from 'disc' to 'bullet'
+              });
+              
 
             // 3. Add Image (Now possible via server-side Base64 conversion)
             if (slide.image) {
